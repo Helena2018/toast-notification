@@ -1,11 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  background-color: #03001e;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   display: flex;
   align-items: center;
@@ -14,3 +15,40 @@ body {
   overflow: hidden;
   height: 100vh;
 }
+
+.btn {
+  background-color: #ffffff;
+  color: #03001e;
+  border: none;
+  font-weight: bold;
+  padding: 1rem;
+  font-family: inherit;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+#toast {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.toast {
+  background-color: #fff;
+  color: #03001e;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+}
+
